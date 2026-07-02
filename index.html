@@ -4,24 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Introduction to HTML</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+
+        /* Tag selector */
+
+       h2{
+        color:blue;
+    }
+
+         /* Id selector */
+
+    #head3{
+        color:rgb(43, 192, 226);
+        text-align: center;
+    }
+
+         /* Class selector */
+    
+    .font-color{
+        font-size:18px;
+        color:rgb(128, 0, 124);
+    }
+    </style>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     
     <!-- Heading Tags -->
-    
-    <h1>Heading 1</h1>
-    <h1>Heading 2</h1>
-    <h1>Heading 3</h1>
-    <h1>Heading 4</h1>
-    <h1>Heading 5</h1>
-    <h1>Heading 6</h1>
+    Heading Tags
+    <!-- Inline CSS -->
+
+    <h1 style="color:crimson">Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3 id="head3">Heading 3</h3>
+    <h4 class="font-color">Heading 4</h4>
+    <h5 >Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <hr>
+
+    <!-- For External CSS -->
+
+    <h1 id="ext-color">HTML</h1>
+    <h5 class="ext-font-align">Cascading Style Sheet</h5>
+    <h3 class="ext-font-align">Javascript</h3>
+
+    <hr>
 
     <!-- Paragraph Tag -->
     
-    <p>HTML is the standard language used to create web pages. It provides the basic structure of a website using elements called tags. HTML is used to add headings, paragraphs, images, links, tables, forms, and other content to a webpage. It works together with CSS for styling and Javascript for adding intercativity, making websites attractive and functional.</p>
+    <p class="font-color">HTML is the standard language used to create web pages. It provides the basic structure of a website using elements called tags. HTML is used to add headings, paragraphs, images, links, tables, forms, and other content to a webpage. It works together with CSS for styling and Javascript for adding intercativity, making websites attractive and functional.</p>
     
-    <!-- Image Tag -->
+    <hr>
 
+    <!-- Image Tag -->
+    <center>
     <img src="images\nature.jpg" width="200" height="300"/>
 
     <br>
@@ -31,6 +71,9 @@
     <a href="register.html" target="_blank">
         Register Now !!!
     </a>
+    </center>
+
+    <hr>
 
     <!-- Ordered List and Unordered List -->
 
@@ -52,11 +95,15 @@
 
     </ol>
 
+    <hr>
+
     <ul type="circle">
         <li>HTML</li>
         <li>CSS</li>
         <li>JS</li>
     </ul>
+
+    <hr>
 
    <!-- Descriptive List -->
 
@@ -66,6 +113,8 @@
         <dd>Python</dd>
         <dd>C++</dd>
    </dl>
+
+   <hr>
 
    <!-- Tables -->
 
@@ -98,6 +147,26 @@
 
    </article>
 
-   
+   <br>
+   <hr>
+   <!-- Form Tag -->
+    
+   <form>
+        <label for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required/><br><br>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email ID" required><br><br>
+        <label for="pswd">Password</label>
+        <input id="pswd" type="password" placeholder="Enter your password" required><br><br>
+        <label for="Gender">Gender:</label>
+        <input name="Gender" type="radio" value="Female"><label>Female</label>
+        <input name="Gender" type="radio" value="Male"><label>Male</label><br><br>
+        <input type="checkbox" id="chk" value="Terms">
+        <label for="chk">Accept Terms and Conditions</label><br><br>
+        <input type="checkbox" id="agree" value="agree">
+        <label for="agree">Agree</label><br><br>
+        <button>Register</button>
+    </form>
+
 </body>
 </html>
