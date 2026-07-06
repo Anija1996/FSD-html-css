@@ -1,0 +1,28 @@
+.parent{
+    display: flex;
+    /* flex-direction: column; */
+    background-color: aquamarine;
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    /* gap: 50px; */
+    align-items: center;
+    height: 200px;
+}
+.child1{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+}
+.child2{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(43, 82, 39);
+}
+.child3{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(60, 25, 25);
+}
