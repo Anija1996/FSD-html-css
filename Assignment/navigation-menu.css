@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, white, gray);
+
+  nav {
+    display: flex;
+
+    a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: rgb(0, 0, 5);
+      transition: 0.5s ease-in-out;
+
+      &:hover {
+        background: rgb(160, 180, 212);
+        color: rgb(60, 29, 153);
+        border-radius: 10px;
+      }
+    }
+  }
+}
