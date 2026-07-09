@@ -1,0 +1,32 @@
+.Media-query{
+    background-color: rgb(46, 166, 80);
+    width: 100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.extra{
+    
+    background-color: rgb(66, 110, 198);
+    width: 50%;
+    height:50px;
+}
+
+@media (max-width:768px){
+    .Media-query{
+        background-color: rgb(75, 14, 14);
+    }
+    .extra{
+        background-color: rgb(236, 83, 83);
+    }
+}
+
+@media (max-width:480px){
+    .Media-query{
+        background-color: rgb(75, 14, 14);
+    }
+    .extra{
+        background-color: rgb(236, 83, 83);
+    }
+}
