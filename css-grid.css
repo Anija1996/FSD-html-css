@@ -1,0 +1,11 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr; 
+    /* grid-template-columns: auto auto auto; 
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-columns: 200px 200px 200px; */
+    gap:20px;
+    .sub{
+        border:2px solid blue;
+    }
+}
